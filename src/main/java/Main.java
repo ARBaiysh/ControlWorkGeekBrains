@@ -1,5 +1,8 @@
 public class Main {
     public static void main(String[] args) {
+        String[] input = initArray();
+        String[] output = arrayOnlyUpToThreeCharacters(input);
+        printArray(output);
 
     }
     private static String[] initArray() {
