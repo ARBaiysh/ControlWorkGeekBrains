@@ -18,4 +18,18 @@ public class Main {
         }
         return st.toString().split(",");
     }
+
+    private static void printArray(String[] outputArrays) {
+        StringBuilder st = new StringBuilder("[");
+        for (int i = 0; i < outputArrays.length; i++) {
+            if (outputArrays[i].length() > 0) {
+                st.append('"').append(outputArrays[i]).append('"');
+                if (i < outputArrays.length - 1) {
+                    st.append(",");
+                }
+            }
+        }
+        st.append("]");
+        System.out.println(st);
+    }
 }
